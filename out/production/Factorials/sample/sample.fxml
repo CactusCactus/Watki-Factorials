@@ -1,0 +1,38 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextField
+        fx:id="numberField"
+        promptText="Podaj liczbę"
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0"
+        GridPane.columnSpan="3"/>
+    <Button
+        text="Licz rekurencyjnie"
+        GridPane.rowIndex="1"
+        GridPane.columnIndex="0"
+        onAction="#onRecurentAction"/>
+    <Button
+        text="Licz iteracyjnie"
+        GridPane.rowIndex="1"
+        GridPane.columnIndex="1"
+        onAction="#onIterateAction"/>
+    <Button
+        text="Nie chcę dłużej czekać"
+        GridPane.rowIndex="1"
+        GridPane.columnIndex="2"
+        onAction="#onInteruptAction"/>
+    <Label
+        fx:id="recurentResult"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="2"/>
+    <Label
+        fx:id="interatevelyResult"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="2"/>
+</GridPane>
